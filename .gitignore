@@ -1,20 +1,15 @@
-# Virtual env
-.venv/
+# Ignore datasets
+data/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Ignore models
+models/*
+!models/.gitkeep
 
 # Python
 __pycache__/
 *.pyc
 
-# Models (very important)
-models/*.pt
-models/*.pkl
-
-# Data (optional depending on size)
-data/raw/
-data/processed/
-
-# Notebooks checkpoints
-.ipynb_checkpoints/
-
-# OS
-.DS_Store
+# Env
+.venv/
